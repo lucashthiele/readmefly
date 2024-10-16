@@ -1,0 +1,39 @@
+{
+    "name": "readmefly",
+    "version": "0.0.1",
+    "description": "ReadmeFly is a Software as a Service that provides software documentation powered by AI.",
+    "type": "module",
+    "main": "app.ts",
+    "engines": {
+        "node": ">=21.7.3",
+        "npm": ">=10.5.0",
+        "yarn": ">=1.22.22"
+    },
+    "scripts": {
+        "test": "jest --forceExit --detectOpenHandles",
+        "start": "nodemon --exec NODE_NO_WARNINGS=1 node --loader ts-node/esm src/app.ts",
+        "build": "tsc",
+        "prod": "node dist/app.js"
+    },
+    "keywords": [],
+    "author": "Lucas Henrique Thiele",
+    "license": "MIT",
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@types/express": "^5.0.0",
+        "@types/jest": "^29.5.13",
+        "@types/mongodb": "^4.0.7",
+        "babel-jest": "^29.7.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.7",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "mongodb": "^6.9.0"
+    }
+}
