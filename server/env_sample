@@ -1,0 +1,6 @@
+#port used by the server
+PORT=
+
+#mongo db connection string and database
+MONGODB_CONNECTION_STRING=
+MONGODB_DATABASE=
